@@ -33,7 +33,9 @@ open class KeyboardInputViewController: UIInputViewController {
     }
     
     open override func viewWillLayoutSubviews() {
-//        keyboardContext.sync(with: self)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
+            keyboardContext.sync(with: self)
+        }
         super.viewWillLayoutSubviews()
     }
     
