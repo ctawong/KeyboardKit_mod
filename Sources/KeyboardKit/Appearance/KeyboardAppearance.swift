@@ -25,6 +25,8 @@ import SwiftUI
  */
 public protocol KeyboardAppearance: AnyObject {
     
+    var keyboardInputViewController: KeyboardInputViewController? { get set }
+    
     /**
      The button image to use for a certain `action`, if any.
      */

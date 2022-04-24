@@ -29,6 +29,7 @@ open class StandardKeyboardAppearance: KeyboardAppearance {
     }
     
     private let context: KeyboardContext
+    public var keyboardInputViewController: KeyboardInputViewController?
     
     private var layoutConfig: KeyboardLayoutConfiguration {
         .standard(for: context)
