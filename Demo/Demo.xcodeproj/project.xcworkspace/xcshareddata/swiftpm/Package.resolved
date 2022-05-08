@@ -1,34 +1,23 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "KeyboardKit",
-        "repositoryURL": "https://github.com/danielsaidi/KeyboardKit.git",
-        "state": {
-          "branch": "master",
-          "revision": "7d852a559bf304b90d1b8b662b97abc52cc7c31d",
-          "version": null
-        }
-      },
-      {
-        "package": "KeyboardKitPro",
-        "repositoryURL": "https://github.com/KeyboardKit/KeyboardKitPro.git",
-        "state": {
-          "branch": null,
-          "revision": "ed28af11e791e487a1385096c05a6dbfe5df3635",
-          "version": "5.3.0"
-        }
-      },
-      {
-        "package": "SwiftUIKit",
-        "repositoryURL": "https://github.com/danielsaidi/SwiftUIKit",
-        "state": {
-          "branch": null,
-          "revision": "ada89fe6b3bf8bed5bcd0a2d2df0f3e3b34cf4d0",
-          "version": "2.3.0"
-        }
+  "pins" : [
+    {
+      "identity" : "keyboardkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/danielsaidi/KeyboardKit.git",
+      "state" : {
+        "revision" : "c936cdf07cf46356e641765ee6d7684face9080f",
+        "version" : "5.4.1"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "swiftuikit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/danielsaidi/SwiftUIKit",
+      "state" : {
+        "revision" : "ada89fe6b3bf8bed5bcd0a2d2df0f3e3b34cf4d0",
+        "version" : "2.3.0"
+      }
+    }
+  ],
+  "version" : 2
 }

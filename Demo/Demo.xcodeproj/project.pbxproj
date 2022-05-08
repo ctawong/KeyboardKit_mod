@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A91BED3B25E447E1000BE8E6 /* KeyboardKitPro in Frameworks */ = {isa = PBXBuildFile; productRef = A91BED3A25E447E1000BE8E6 /* KeyboardKitPro */; };
 		A921152625D58A94003510D9 /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A921152525D58A94003510D9 /* DemoApp.swift */; };
 		A921152825D58A94003510D9 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A921152725D58A94003510D9 /* HomeScreen.swift */; };
 		A921152A25D58A96003510D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A921152925D58A96003510D9 /* Assets.xcassets */; };
@@ -149,7 +148,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A91BED3B25E447E1000BE8E6 /* KeyboardKitPro in Frameworks */,
 				A921155625D58D95003510D9 /* KeyboardKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,7 +340,6 @@
 			name = Keyboard;
 			packageProductDependencies = (
 				A921155525D58D95003510D9 /* KeyboardKit */,
-				A91BED3A25E447E1000BE8E6 /* KeyboardKitPro */,
 			);
 			productName = Keyboard;
 			productReference = A921153925D58AC7003510D9 /* Keyboard.appex */;
@@ -377,7 +374,6 @@
 			mainGroup = A921151925D58A94003510D9;
 			packageReferences = (
 				A921154F25D58D85003510D9 /* XCRemoteSwiftPackageReference "KeyboardKit" */,
-				A91BED3925E447E1000BE8E6 /* XCRemoteSwiftPackageReference "KeyboardKitPro" */,
 				A9E4917E2748F22B0078F435 /* XCRemoteSwiftPackageReference "SwiftUIKit" */,
 			);
 			productRefGroup = A921152325D58A94003510D9 /* Products */;
@@ -601,7 +597,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Demo/Preview Content\"";
-				DEVELOPMENT_TEAM = PMEDFW438U;
+				DEVELOPMENT_TEAM = 3HTT9XMPUJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -610,7 +606,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 4.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.keyboardkit.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aw.keyboard.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -646,7 +642,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PMEDFW438U;
+				DEVELOPMENT_TEAM = 3HTT9XMPUJ;
 				INFOPLIST_FILE = Keyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -654,7 +650,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 4.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.keyboardkit.demo.keyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aw.keyboard.demo.keyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -666,7 +662,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PMEDFW438U;
+				DEVELOPMENT_TEAM = 3HTT9XMPUJ;
 				INFOPLIST_FILE = Keyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -674,7 +670,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 4.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.keyboardkit.demo.keyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aw.keyboard.demo.keyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -715,20 +711,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A91BED3925E447E1000BE8E6 /* XCRemoteSwiftPackageReference "KeyboardKitPro" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/KeyboardKit/KeyboardKitPro.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.3.0;
-			};
-		};
 		A921154F25D58D85003510D9 /* XCRemoteSwiftPackageReference "KeyboardKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/danielsaidi/KeyboardKit.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = exactVersion;
+				version = 5.4.1;
 			};
 		};
 		A9E4917E2748F22B0078F435 /* XCRemoteSwiftPackageReference "SwiftUIKit" */ = {
@@ -742,11 +730,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A91BED3A25E447E1000BE8E6 /* KeyboardKitPro */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A91BED3925E447E1000BE8E6 /* XCRemoteSwiftPackageReference "KeyboardKitPro" */;
-			productName = KeyboardKitPro;
-		};
 		A921155025D58D86003510D9 /* KeyboardKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A921154F25D58D85003510D9 /* XCRemoteSwiftPackageReference "KeyboardKit" */;
