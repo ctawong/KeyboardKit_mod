@@ -42,7 +42,7 @@ public extension KeyboardInputTextComponent {
      
      This will register the input as the current input proxy.
      */
-    func handleBecomeFirstResponder() {
+    open func handleBecomeFirstResponder() {
         viewController.textInputProxy = TextInputProxy(input: self)
     }
     
