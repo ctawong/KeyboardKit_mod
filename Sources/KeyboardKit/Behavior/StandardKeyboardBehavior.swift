@@ -49,13 +49,13 @@ open class StandardKeyboardBehavior: KeyboardBehavior {
     }
     
     
-    private let context: KeyboardContext
-    private let doubleTapThreshold: TimeInterval
-    private let endSentenceThreshold: TimeInterval
-    private let repeatGestureTimer: RepeatGestureTimer
+    let context: KeyboardContext
+    let doubleTapThreshold: TimeInterval
+    let endSentenceThreshold: TimeInterval
+    let repeatGestureTimer: RepeatGestureTimer
     
     var lastShiftCheck = Date()
-    var lastSpaceTap = Date()
+    public var lastSpaceTap = Date()
     
     
     /**
