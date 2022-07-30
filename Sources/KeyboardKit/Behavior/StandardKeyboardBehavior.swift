@@ -49,8 +49,8 @@ open class StandardKeyboardBehavior: KeyboardBehavior {
     }
     
     
-    let context: KeyboardContext
-    let doubleTapThreshold: TimeInterval
+    public let context: KeyboardContext
+    public let doubleTapThreshold: TimeInterval
     let endSentenceThreshold: TimeInterval
     let repeatGestureTimer: RepeatGestureTimer
     
