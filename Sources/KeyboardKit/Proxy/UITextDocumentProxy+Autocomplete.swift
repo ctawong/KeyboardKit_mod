@@ -79,7 +79,7 @@ public extension UITextDocumentProxy {
     }
 }
 
-extension UITextDocumentProxy {
+public extension UITextDocumentProxy {
     
     func resetState() {
         setState(.none)
