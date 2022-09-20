@@ -49,7 +49,7 @@ public struct SystemKeyboardActionButtonContent: View {
         } else if action == .space {
             spaceView
         } else if let image = buttonImage {
-            image
+            image.aspectRatio(contentMode: .fit)
         } else if let text = buttonText {
             textView(for: text)
         } else {
