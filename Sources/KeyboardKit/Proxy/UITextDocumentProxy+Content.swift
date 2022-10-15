@@ -24,6 +24,18 @@ public extension UITextDocumentProxy {
     
     /**
      Whether or not the text document proxy cursor is at the
+     beginning of new line and after any number of spaces
+     */
+    var isCursorAtNewLine: Bool {
+        guard let pre = trimmedDocumentContextBeforeInput else { return true }
+        if pre.isEmpty { return true }
+        let lastCharacter = String(pre.suffix(1))
+        return lastCharacter == .newline
+  
+    }
+    
+    /**
+     Whether or not the text document proxy cursor is at the
      beginning of a new sentence, with trailing spaces after
      the last sentence delimiter.
      */

@@ -94,9 +94,10 @@ open class StandardKeyboardBehavior: KeyboardBehavior {
         let proxy = context.textDocumentProxy
         let isNewWord = proxy.isCursorAtNewWord
         let isNewSentence = proxy.isCursorAtNewSentence
+        let isNewLine = proxy.isCursorAtNewLine
         let isClosable = (proxy.documentContextBeforeInput ?? "").hasSuffix("  ")
         let isEndingTap = Date().timeIntervalSinceReferenceDate - lastSpaceTap.timeIntervalSinceReferenceDate < endSentenceThreshold
-        let shouldClose = isEndingTap && isNewWord && !isNewSentence && isClosable
+        let shouldClose = isEndingTap && isNewWord && !isNewSentence && !isNewLine && isClosable
         lastSpaceTap = Date()
         return shouldClose
     }
